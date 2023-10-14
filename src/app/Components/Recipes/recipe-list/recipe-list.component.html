@@ -1,0 +1,8 @@
+<div class="d-flex justify-content-evenly flex-wrap mt-2 me-3 ms-3">
+    <div class="d-flex flex-wrap" style="height:80vh;overflow-y:scroll; width: 45%; min-width: 300px;">
+        <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe"></app-recipe-item>
+    </div>
+    <div>
+        <app-recipe-add></app-recipe-add>
+    </div>
+</div>
